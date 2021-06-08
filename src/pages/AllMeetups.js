@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
-import MeetupList from "../components/meetups/MeetupList";
-
+import MeetupList from "../Components/meetups/MeetupList";
+import Todo from '../Components/Todo';
 function AllMeetupsPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [loadedMeetups, setLoadedMeetups] = useState([]);
@@ -43,7 +43,6 @@ function AllMeetupsPage() {
     <section>
       <h1>All meetups</h1>
       <MeetupList meetups={loadedMeetups} />
-
       {/* <ul>
         {DUMMY_DATA.map((meetup) => {
           return <li key={meetup.id}>{meetup.title}</li>;

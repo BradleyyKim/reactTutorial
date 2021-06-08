@@ -1,5 +1,5 @@
 import { useHistory } from 'react-router-dom';
-import NewMeetupForm from "../components/meetups/NewMeetupForm";
+import NewMeetupForm from "../Components/meetups/NewMeetupForm";
 
 function NewMeetupPage() {
   const history = useHistory();
